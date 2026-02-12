@@ -142,15 +142,18 @@ dZ_t = -\nabla J_{\text{stab}}(Z_t) dt + \Sigma(Z_t) dW_t
 
 ---
 
-## **Scaling Law**
+### Scaling Law
 
-Balancing contraction error \((O(\lambda d))\) with variance \((O(1/(\lambda n)))\) predicts:
+We derive the **Scaling Law**:
 
 \[
 \lambda^* \propto \sqrt{\frac{d}{n}}
 \]
 
-Empirical sweeps **confirm agreement**.
+as a fundamental consequence of the balance between the **Ricci curvature** of the representation manifold and the **information-theoretic volume**.  
+
+This relation highlights how model capacity \(d\) and dataset size \(n\) interact to determine the optimal scaling factor \(\lambda^*\), providing a geometric and information-theoretic foundation for representation learning.
+
 
 ---
 
