@@ -213,12 +213,6 @@ LCRD provides:
 
 ## Results
 
-### Pareto Frontier Visualization
-
-![Pareto Frontier](pareto_frontier_validation.png)
-
-*Left: 2D heatmap showing accuracy across (stability, exploration) space. Red star marks Pareto optimum. Right: Cross-section at optimal entropy level showing clear peak.*
-
 ### Quantitative Findings
 
 #### Optimal Operating Point
