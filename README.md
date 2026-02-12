@@ -50,49 +50,6 @@ This isn't just metaphor—it's proven mathematically and validated experimental
 
 ---
 
-## Mathematical Framework
-
-### Problem Setting
-
-Consider a supervised learning task:
-
-$$X \sim p(x), \quad Y \sim p(y|x), \quad f_\theta: X \to Z \subset \mathbb{R}^d$$
-
-Where:
-- $X$ = input space
-- $Y$ = target space
-- $f_\theta$ = parametric representation map
-- $Z$ = learned representation space
-
-### Unified Objective
-
-Learning optimizes three competing functionals:
-
-$$\min_\theta \quad \mathcal{L}_{\text{task}}(f_\theta) + \lambda J_{\text{stability}}(f_\theta) + \alpha I(Z; X) - \beta I(Z; Y)$$
-
-**Components:**
-
-1. **Task Fidelity**: $\mathcal{L}_{\text{task}} = \mathbb{E}[\ell(f_\theta(X), Y)]$
-   - Standard supervised loss (cross-entropy, MSE, etc.)
-
-2. **Geometric Stability**: $J_{\text{stability}} = \mathbb{E}[\|f_\theta(X)\|^2]$
-   - Contraction toward invariant manifold
-   - Implemented via L2 regularization
-
-3. **Representation Entropy**: $I(Z; X) = H(Z) - H(Z|X)$
-   - Exploration of representation space
-   - Prevents premature collapse
-
-4. **Task Information**: $I(Z; Y)$
-   - Task-relevant compression
-   - Sufficient statistics extraction
-
-**Trade-off Parameters:**
-- $\lambda > 0$ — stability weight (controls bias)
-- $\alpha, \beta > 0$ — information balance (controls variance)
-
----
-
 ## Main Theorem
 
 ### Theorem 1: Pareto-Optimal Generalization
@@ -122,7 +79,6 @@ Deviations from this frontier result in:
 3. **Uniqueness**: Convexity in expectation → unique equilibrium ridge
 4. **Empirical Validation**: Unimodal performance surface observed experimentally
 
-*Full proof in supplementary materials.*
 
 ---
 
