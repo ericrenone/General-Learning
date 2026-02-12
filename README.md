@@ -10,30 +10,7 @@
   <img src="assets/pareto_frontier_validation.png" alt="Pareto Frontier" width="800"/>
 </p>
 
----
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Mathematical Framework](#mathematical-framework)
-  - [Problem Setting](#problem-setting)
-  - [Unified Variational Objective](#unified-variational-objective)
-- [Main Theorems](#main-theorems)
-  - [Theorem 1: Existence of Pareto Equilibria](#theorem-1-existence-of-pareto-equilibria)
-  - [Theorem 2: SGD Convergence](#theorem-2-sgd-convergence-to-stationary-pareto-points)
-  - [Corollary: Bias-Variance Decomposition](#corollary-bias-variance-decomposition)
-- [Geometric Interpretation](#geometric-interpretation)
-- [LCRD Framework](#lcrd-framework)
-- [Scaling Laws](#scaling-laws)
-- [Installation & Usage](#installation--usage)
-- [Experimental Validation](#experimental-validation)
-- [Results](#results)
-- [Theoretical Connections](#theoretical-connections)
-- [Practical Applications](#practical-applications)
-- [Citation](#citation)
-- [References](#references)
-
----
 
 ## Overview
 
